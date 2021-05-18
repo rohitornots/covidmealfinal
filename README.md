@@ -1,4 +1,3 @@
-# covidtrial
-lets go
+# Covid Meal 🥗
 
-this is for trial 
+Free Meals for those Infected with Covid19
