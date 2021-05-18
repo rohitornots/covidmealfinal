@@ -1,0 +1,314 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+
+    <title>Covid Meal</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+    
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NH6M0PV9Q4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NH6M0PV9Q4');
+</script>
+<!--Update the URL for thank you page on form submit -->
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+onload="if(submitted) {window.location='https://covidmeal.netlify.app/thankyou.html';}"></iframe> 
+
+<!-- Update the Google forms URL in action-->
+<form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdvdXezSn6fukZ8pGXzcqgl6xQVWP59eZgAFSCG-E0lWi0RFA/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      input, textarea {
+    border-radius:5px;
+}
+
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="styles.css" rel="stylesheet">
+    <script src="cities.js"></script>
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <h2>Covid Meal</h2>
+      <p class="lead">Order Food For <b>FREE,</b> if you are infected by COVID-19 and need help with food.
+        <h5 style="text-align:center;"><p>Want to Volunteer? <a href="volunteer.html">Volunteer Here  </a></p></h5>
+        Fill The Form Below 👇 to order food 🍜</p>
+    </div>
+    <div class="w3-container w3-light-grey w3-padding-29 w3-padding-large" id="contact"></div>
+    <div class="w3-section">
+    <div class="row g-5">
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3"></h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Name</label>
+              <input class="form-control" type="text" placeholder="Name" id="name" required name="entry.1257011507">
+              <div class="invalid-feedback">
+                Valid name is required.
+              </div>
+            </div>
+    </div>
+    <br>
+            <div class="col-12">
+              <label for="username" class="form-label">Phone Number </label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">+91 </span>
+                <input type="text" class="form-control" id="phone" placeholder="Enter Your 10 Digit Phone Number " required name="entry.47060043" >
+              <div class="invalid-feedback">
+                  Your Phone Number is required.
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="col-md-4">
+              <label for="state" class="form-label">City ( More Will Be Added Soon)
+              </label>
+              <select class="form-select" id="city" required name= "entry.467509625" placeholder="Select city">
+                <option value="">Select a city</option>
+                <!-- <option>Navi Mumbai</option>
+                <option>Pune</option> -->
+
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid city name.
+              </div>
+            </div>
+            <br>
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="Address" placeholder="Address" required name= "entry.527661153">
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+            <br>
+            <div class="col-12">
+              <label for="address2" class="form-label">Pincode<span class="text-muted"></span></label>
+              <input type="text" class="form-control" id="Pincode" placeholder="Pincode" requires name="entry.1721928081">
+            </div>
+            <br>
+            <!-- <div class="col-md-5">
+              <label for="country" class="form-label">City</label>
+              <select class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                <option>Navi Mumbai</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid city.
+              </div>
+            </div> -->
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">No. Of People <p>(Food Will Be Pure Veg and Homemade)</p></label>
+              <select class="form-select" id="No. Of People (Food Will Be Pure Veg and Homemade)" required name="entry.130483611">
+                <option value="">Choose...</option>
+                <option>1</option>
+                <option>2-3</option>
+                <option>4-5</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid number.
+              </div>
+            </div>  
+            <br>
+            <div class="col-md-4">
+              <label for="state" class="form-label">Time of Delivery and Food </label>
+              <select class="form-select" id="Time of Delivery and Food" required name="entry.23586979">
+                <option value="">Lunch/Dinner/Both</option>
+                <option>Lunch 12PM -3 PM</option>
+                <option>Dinner 6 PM - 8:30 PM</option>
+                <option>Both</option>
+              
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <br>
+            <!-- <div class="col-md-4">
+              <label for="state" class="form-label">Time of Delivery</label>
+              <select class="form-select" id="Time of Delivery and Food" required name="entry.23586979">
+                <option value="">Choose...</option>
+                <option>Lunch (12pm to 3pm)</option>
+                <option>Dinner (6pm to 9pm)</option>
+                <option>Both</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid Time.
+              </div>
+            </div> -->
+
+             <div class="col-md-4">
+              <label for="state" class="form-label">No. of Days to deliver food</label>
+              <select class="form-select" id="No. Of Days to Deliver Food" required name="entry.404063359">
+                <option value="">Select Here</option>
+                <option>1 Day (Delivers Tomorrow)</option>
+                <option>2 Days</option>
+                <option>3 Days</option>
+                <option>4 Days</option>
+                <option>5 Days</option>
+                <option>6 Days</option>
+                <option>7 Days (1 Week)</option> 
+
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <br>
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Place Order</button>
+            <br>
+          <hr class="my-4">
+
+          <p><b>NOTE</b>:
+            <br>
+            <br>
+            *Please order ONLY if infected with COVID-19 😷
+            <br>  
+            *The food will purely be Veg 🥦 and Homemade.
+            <br>
+            *The Order will be served on first come first serve basis or not
+            <br>
+            *The food served might contain allergens such as almonds, gluten, soy, dairy, peanut,coconut etc., We will not be responsible for any allergy caused due the food served.
+            <br>
+            </p>
+            
+        </form>
+      </div>
+    </div>
+  </main>
+  <br>
+  <br>
+  <br>
+  <p>Contact Us Here 🚩 ☎ :<br>
+    <a href="https://www.linkedin.com/in/rohit-soni-7410681aa/">Rohit Soni</a>
+    <br>
+    <a href="https://www.linkedin.com/in/rashmi-bisht-a76bb6145/">Rashmi Bisht</a>
+    </p>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2021–2022 Covid Meal</p>
+
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+      <script src="form-validation.js"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+          if (cities && cities.length > 0) {
+            for (var i = 0; i < cities.length; i++) {
+              var key = cities[i];
+              $('select#city').append($("<option></option>")
+                    .attr("value", key)
+                    .text(key));     
+            }
+          }
+          
+        });
+
+        function validateCity() {
+          var city = $("select#city").val();
+          if (!city) {
+            alert("Please select a city");
+            return false;
+          }
+          return true;
+        }
+        function validateName() {
+                var name = document.getElementById('name').value;
+                if(name.length == 0) {
+                  alert("Name can't be blank") ;
+                  return false;
+    
+                }
+                if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+                  alert("Please enter your correct name") ;//Validation Message
+                  return false;
+                }
+                return true;
+              }
+    
+              function validatePhone() {
+                var phone = document.getElementById('phone').value;
+                if(phone.length == 0) {
+                  alert("Phone number can't be blank") ;//Validation Message
+                  return false;
+                }
+    
+                if(!phone.match(/^[0]?[789]\d{9}$/)) {
+                 alert("Please enter a correct phone number") ;//Validation Message
+                 return false;
+               }
+    
+               return true;
+    
+             }
+    
+             
+    
+            function validateForm() {
+              if (!validateName() || !validatePhone() || !validateCity()) {
+    
+                alert("Form not submitted");//Validation Message
+                return false;
+              }
+              else {
+                submitted=true;
+                return true;
+              }
+            }
+            </script>
+    
+
+
+  </body>
+</html>

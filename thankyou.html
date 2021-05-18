@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap">
+    <style>
+        body {
+          font-family: 'Noto Sans JP', sans-serif;  }
+          div.a {
+        font-size: 17px;
+          }
+          .slider {
+      width: 90%;
+      height: 430px;
+      margin: 20px auto;
+      box-sizing: border-box;
+      overflow: hidden;
+      box-shadow: 5px 5px 10px grey;
+
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      animation: ani 6s linear;
+
+    }
+
+    @keyframes ani {
+      0% {
+        transform: scale(1.2);
+      }
+      10% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    hr { display: block; height: 1px;
+    border: 0; border-top: 2px solid rgb(49, 47, 47);
+    margin: 1em 0; padding: 1rem; }
+
+
+
+      </style>
+    <title>Thank-You</title>
+</head>
+<body>
+    <p><h2 style="text-align: center;">Thank You!</h2></p>
+    <p>Your Order request has been recieved, you will recieve a confirmation for your order within 30 mins 🥕 |  We wish you fast recovery 😊</p>
+    <p>Please keep your Covid-19 report ready for identification purpose when contacted.</p>
+
+    
+    
+    <br>
+    <p><h4 style="text-align:center;">To Submit another form or to visit homepage</h4>  <p><h4 style="text-align:center;">please  click below 👇</h4></p> </p>
+    
+    <h3 style="text-align:center" ><a href="index.html">Return to Home Page</a></h3>
+
+<hr>
+        
+<p> <h3 style="text-align:center;"><b>Sharing Is Caring 🤗</b></h3> </p>
+<p> <h5 style="text-align:center;">Some of our reviews and food</h5></p>
+<div class="slider">
+
+  <div id="img">
+    <img src="images/1.jpeg">
+  </div>
+
+</div>
+<script>
+
+  var images = ['1.jpeg', '2.jpeg','3.jpeg','4.jpeg','5.jpeg','6.jpeg','7.jpeg','8.jpeg','9.jpeg','10.jpeg','11.jpeg','12.jpeg','13.jpeg',];
+
+  var x = 0;
+
+  var imgs = document.getElementById('img');
+
+  setInterval(slider, 2000);
+
+
+  function slider() {
+
+    if (x < images.length) {
+      x = x + 1;
+    } else {
+      x = 1;
+    }
+
+
+    imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+
+
+  }
+  
+
+
+</script>
+</body>    
+<hr>
+    <p> <h4 style="text-align:center;">Developed And Catered with 💖 by <a href="https://www.linkedin.com/in/rohit-soni-7410681aa/"><p>Rohit Soni</a>
+         and <a href="https://www.linkedin.com/in/rashmi-bisht-a76bb6145/">Rashmi Bisht</a></p></h4>
+        </p>
+</html>
