@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="logo.png" type="image/png" sizes="16x16">
 <style>
     body {
       font-family: 'Noto Sans JP', sans-serif;  }
@@ -22,107 +23,41 @@
 
 <!-- Start Contact Section -->
  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-    <h3 class="w3-center"><b>Volunteer For Covid Meal </b></h3>
-    <h5 class="text-align:center;"><p>Thanks a Lot for Taking this initiative!😊</p></h5>
-      <h6 class="text-align:center;"><p>You can now Volunteer for <b>making meals</b> and <b>delivering them</b>, if you need any help with setting up delivery or advice please contact us at - <a href="mailto:covifoodfree@gmail.com">covifoodfree@gmail.com</a></p></h6>
+    <h3 class="w3-center"><b>Request Your City </b></h3>
+    <h5 class="text-align:center;"><p>We are adding new cities daily and would love to deliver meals in your city too 😊</p></h5>
+      <h6 class="text-align:center;"><p>Just wait for a while and if you need any URGENT help please contact us at - <a href="mailto:covifoodfree@gmail.com">covifoodfree@gmail.com</a></p></h6>
   </a></p></h5>
-  <p> <b>Just Fill The Form Below And We will contact you within 6 hrs* 👇</b></p>
+  <p> <b>Just Fill The Form Below And We will contact you whenever your city is added 👇</b></p>
 
     <script type="text/javascript">var submitted=false;</script>
     
     <!--Update the URL for thank you page on form submit -->
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-onload="if(submitted) {window.location='https://covidmeal.netlify.app/thanksvolun.html';}"></iframe> 
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='https://covidmeal.netlify.app/thankyou.html';}"></iframe> 
     
     <!-- Update the Google forms URL in action-->
-    <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeohe0nfUSaPy01fimSyPbJhlpF5E1cqdKtSQ35PGVmqOc1zQ/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+    <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfFtLvoH9ufYaOMUtuh2xOIpsc02lfeKgsPXVeOXusTSd2E8w/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
 
       
       <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.1142980180">
+        <label>Your Name</label>
+        <input class="w3-input w3-border" type="text" placeholder="Name" id="Your Name" required name="entry.1846625501">
       </div>
      
      
       <div class="w3-section">
-        <label>Phone</label>
-        <input class="w3-input w3-border" type="text" placeholder="Phone" id="phone" required name="entry.1194409868">
+        <label>Your Phone No.</label>
+        <input class="w3-input w3-border" type="text" placeholder="Phone" id="your contact number" required name="entry.252742656">
       </div>
+      
       
       
       <div class="w3-section">
-              <label>Select State/Union Territory</label>
-
-  <select class="w3-select w3-grey" id="Select State/Union Territory" required name="entry.608068340">
-      <option value="" disabled selected>Select Your State/Union Territory</option>
-    <option value="Andhra Pradesh">Andhra Pradesh</option>
-    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-    <option value="Assam">Assam</option>
-    <option value="Bihar">Bihar</option>
-    <option value="Chhattisgarh">Chhattisgarh</option>
-    <option value="Delhi">Delhi</option>
-    <option value="Goa">Goa</option>
-    <option value="Gujarat">Gujarat</option>
-    <option value="Harayana">Harayana</option>
-    <option value="Himachal Pradesh">Himachal Pradesh </option>
-    <option value="Jammu Kashmir">Jammu Kashmir</option>
-    <option value="Jharkhand">Jharkhand</option>
-    <option value="Karnataka">Karnataka</option>
-    <option value="Kerala">Kerala</option>
-    <option value="Madhya Pradesh ">Madhya Pradesh</option>
-    <option value="Maharashtra">Maharashtra</option>
-    <option value="Manipur">Manipur</option>
-    <option value="Meghalaya">Meghalaya</option>
-    <option value="Mizoram">Mizoram</option>
-    <option value="Nagaland">Nagaland</option>
-    <option value="Odisha">Odisha</option>
-    <option value="Punjab">Punjab</option>
-    <option value="Rajasthan">Rajasthan</option>
-    <option value="Sikkim">Sikkim</option>
-    <option value="Tamil Nadu">Tamil Nadu</option>
-    <option value="Telangana">Telangana</option>
-    <option value="Tripura">Tripura</option>
-    <option value="Uttrakhand">Uttrakhand</option>
-    <option value="Uttar Pradesh">Uttar Pradesh</option>
-    <option value="West Bengal">West Bengal</option>
-
-    </select>
-      </div>
-      <div class="w3-section">
-        <label>Mention Your City</label>
-        <input class="w3-input w3-border" type="text" placeholder="Your City" id="Mention Your City" required name="entry.1153333557">
+        <label>Your State and City Name</label>
+        <input class="w3-input w3-border" type="text" placeholder="Your State and City" id="State and City Name" required name="entry.1413334344">
       </div>
       
-      
-      <div class="w3-section">
-        <label>What areas you can deliver? Also How will you deliver (i.e Delivery Services - WeFast,Dunzo,etc.)</label>
-        <input class="w3-input w3-border" type="text" placeholder="Please Elaborate" id="What areas you can deliver? Also How will you deliver (i.e Delivery Services - WeFast,Dunzo,etc.)" required name="entry.1067118257">
-      </div>
-      
-            <div class="w3-section">
-        <label>No. Of Meals You can make (Each Day)</label>
-        <input class="w3-input w3-border" type="text" placeholder=" (i.e. 1 Meal should be enough for 2 Adults) " id="Pincode" required name="entry.1574287463">
-      </div>
-      
-       <div class="w3-section">
-              <label>Vegetarian | Non-Veg | Both </label>
-
-  <select class="w3-select w3-grey" id="Vegetarian | Non-Veg | Both" required name="entry.2102008888">
-      <option value="" disabled selected>Select Here</option>
-        <option value="Vegetarian">Vegetarian  </option>
-        <option value="Non-Veg">Non-Veg</option>
-        <option value="Both">Both </option>
-        </div>
-        </select>
-        
-        
-         <div class="w3-section">
-        <label>When Can you start making and delivering food?</label>
-        <input class="w3-input w3-border" type="text" placeholder="(i.e. Today,Tomorrow etc.)" id="When Can you start making and delivering food?" required name="entry.890814812">
-      </div>
-      
- 
-
+    
       <div class="w3-section">
         <button class="w3-button w3-block w3-black w3-margin-bottom" type="submit"> SUBMIT</button>
       </div>
@@ -136,12 +71,11 @@ onload="if(submitted) {window.location='https://covidmeal.netlify.app/thanksvolu
     <br>
     <a href="https://www.linkedin.com/in/rashmi-bisht-a76bb6145/">Rashmi Bisht</a>
     <br>
-    <p>Call Us (For Pune Only)</p>
-    <a href="tel:+919766717247">Mr. Praveen</a>  
+   
 
     <script type="text/javascript">
         function validateName() {
-                var name = document.getElementById('name').value;
+                var name = document.getElementById('Your Name').value;
                 if(name.length == 0) {
                   alert("Name can't be blank") ;
                   return false;
@@ -155,7 +89,7 @@ onload="if(submitted) {window.location='https://covidmeal.netlify.app/thanksvolu
               }
     
               function validatePhone() {
-                var phone = document.getElementById('phone').value;
+                var phone = document.getElementById('your contact number').value;
                 if(phone.length == 0) {
                   alert("Phone number can't be blank") ;//Validation Message
                   return false;
