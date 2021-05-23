@@ -5,4 +5,12 @@ var cities = [
 "Bhopal",
 "Vadodara", 
 "Hyderabad",
+"Indore",
+"Jaipur",
+"Mumbai",
+"Bageshwar",
+"Bangalore",
+"Aligarh",
+"Pondicherry",
+
 ];
