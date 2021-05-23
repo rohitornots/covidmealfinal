@@ -12,5 +12,6 @@ var cities = [
 "Bangalore",
 "Aligarh",
 "Pondicherry",
+"Nagpur",
 
 ];
